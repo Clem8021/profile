@@ -1,0 +1,104 @@
+/* Style de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Conteneur principal */
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+/* Style des cartes */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Centre le texte dans la carte */
+  display: flex; /* Utilisation de Flexbox pour centrer les éléments à l'intérieur */
+  flex-direction: column; /* Arrange les éléments en colonne */
+  align-items: center; /* Centre les éléments horizontalement */
+  justify-content: center; /* Centre les éléments verticalement si nécessaire */
+}
+
+/* Effet au survol des cartes */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+/* Style des titres */
+h1, h2 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Style des images */
+img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: 20px;
+  display: block; /* Centrer l'image */
+  margin-left: auto; /* Centrer horizontalement */
+  margin-right: auto; /* Centrer horizontalement */
+}
+
+/* Style des liens */
+a {
+  color: #3498db;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+/* Effet au survol des liens */
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
